@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+*{
+    margin: 5;
+    padding: 5;
+    box-sizing: border-box;
+    font-family: "DM Serif Text", serif;
+}
+
+h1{
+    color: blue;
+}
+h2{
+    color: blue;
+}
+a{
+    color: blue;
+    margin: 5px;
+    padding: 5px;
+}
+p{
+    color: black;
+    font-family: "Tinos", serif;
+    font-style: italic;
+
+}
+
+figure{
+    width: 400px;
+    margin: 0 auto;
+
+}
+
+img{
+    width: 100%;
+}
+
+h3 {
+    margin: 10px;
+}
+
+.lilas{
+    background-color: rgb(197, 196, 255);
+    color: black;
+}
+
+#container{
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+table{
+    border-collapse: collapse;
+    border: 2px solid black;
+    border: 0 auto;
+    
+    
+    
+
+}
+
+td,th {
+    border: 2px solid black
+}
+
+a:hover{
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+li::after{
+    content:";" ;
+}
+
+
+
