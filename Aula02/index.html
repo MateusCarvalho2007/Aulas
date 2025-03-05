@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"> </script>
+</head>
+<body>
+    <form method="post">
+        <label for="1">Nome:</label>
+        <input type="text" name="nome" id="1" placeholder="Insira seu nome" required>
+        <br>
+        <label for="2">Idade:</label>
+        <input type="number" name="idade" id="2" min="18" required>
+        <br>
+        <label for="3">Data de Nascimento:</label>
+        <input type="date" name="nascimento" id="3" required>
+        <br>
+        <label for="3">Email:</label>
+        <input type="email" name="email" id="3" required>
+        <br>
+        <label for="4">Curso:</label>
+        <select name="curso" id="4" required >
+            <option selected disabled>Selecionar</option>
+            <option value="TI">TI</option>
+            <option value="TMA">TMA</option>
+            <option value="TA">TA</option>
+            <option value="TQ">TQ</option>
+        </select>
+        <br>
+        <label>Informe o turno:</label>
+        <input type="radio" name="turno" value="manha"> Manha
+        <input type="radio" name="turno" value="tarde"> Tarde
+        <br>
+        <label>Meio de transporte utilizado:</label>
+        <input type="checkbox" name="transporte" value="puplico" required> Pulico
+        <input type="checkbox" name="trasnporte" value="privado" required> Privado
+        <br>
+        <button name="cadastar" id="5">Cadastrar</button>
+    </form>
+
+    
+</body>
+</html>
