@@ -9,23 +9,32 @@
 </head>
 <body>
     <div>
+        <label for="tamanho">Tamanho:</label>
         <label><input type="radio" name="tamanho">P</label>
         <label><input type="radio" name="tamanho">M</label>
         <label><input type="radio" name="tamanho">G</label>
 
     </div>
     <div>
+        <label for="Sabor">Sabor:</label>
         <label><input type="checkbox" name="Sabor">Morango</label>
         <label><input type="checkbox" name="Sabor">Queijo</label>
         <label><input type="checkbox" name="Sabor">Calabresa</label>
     </div>
     <div>
-        <select id="Recebimento" name="recebimento">
+        <label for="Recebimento">Recebimento:</label>
+        <select id="Recebimento" name="recebimento" required>
             <option value="Selecione">selecione</option>
             <option value="Busca">busca</option>
             <option value="Entrega">entrega</option>
-            
         </select>
+    </div>
+    <div>
+        <label for="Quantidade">Quantidade:</label>
+        <input type="text" name="Quantidade" id="Quantidade" required>
+    </div>
+    <div class="grupo centralizar">
+        <input type="submit" value="Calcular Preço" name="Calcular Preço">
     </div>
 
     
