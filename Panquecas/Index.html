@@ -3,41 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Panquecas</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <script src="Script.js"></script>
 </head>
 <body>
-    <div>
-        <label for="tamanho">Tamanho:</label>
-        <label><input type="radio" name="tamanho">P</label>
-        <label><input type="radio" name="tamanho">M</label>
-        <label><input type="radio" name="tamanho">G</label>
+    <div class="grupo centraliza">
+        <legend>Tamanho da Panqueca:</legend>
+        <label>
+        <input type="radio" name="tamanho" value="P"> P
+        </label>
+        <label>
+        <input type="radio" name="tamanho" value="M"> M
+        </label>
+        <label>
+        <input type="radio" name="tamanho" value="G"> G
+        </label>
+    </div>
 
+    <div class="grupo centraliza">
+        <fieldset>
+        <legend>Sabor da Panqueca:</legend>
+            <label>
+            <input type="checkbox" name="sabor" value="queijo"> Queijo
+            </label>
+            <label>
+            <input type="checkbox" name="sabor" value="calabresa"> Calabresa
+            </label>
+            <label>
+            <input type="checkbox" name="sabor" value="morango"> Morango
+            </label>
+        </fieldset>
     </div>
-    <div>
-        <label for="Sabor">Sabor:</label>
-        <label><input type="checkbox" name="Sabor">Morango</label>
-        <label><input type="checkbox" name="Sabor">Queijo</label>
-        <label><input type="checkbox" name="Sabor">Calabresa</label>
-    </div>
-    <div>
-        <label for="Recebimento">Recebimento:</label>
-        <select id="Recebimento" name="recebimento" required>
-            <option value="Selecione">selecione</option>
-            <option value="Busca">busca</option>
-            <option value="Entrega">entrega</option>
+        
+    <div class="grupo centraliza">
+        <label for="5">Entrega ou Busca?</label>
+        <select id="5" name="Entrega" required> 
+            <option selected disabled>Selecionar</option>
+            <option value="busca">Busca</option>
+            <option value="Entrega">Entrega</option>
         </select>
     </div>
-    <div>
-        <label for="Quantidade">Quantidade:</label>
-        <input type="text" name="Quantidade" id="Quantidade" required>
+    <div class="grupo centraliza">
+        <label for="2">Quantidade:</label>
+        <input type="number" name="quantidade" id="2" min="1" required>
     </div>
-    <div class="grupo centralizar">
-        <input type="submit" value="Calcular Preço" name="Calcular Preço">
+    <div class="grupo centraliza">
+        <button name="calcular" id="3">Calcular</button>
     </div>
-
-    
-    
 </body>
 </html>
