@@ -27,10 +27,12 @@ document.getElementById("3").addEventListener("click", function () {
         return;
     }
 
-    var precoTotal = precosTamanho[tamanho.value];
+    var precoTotal = 0 ;
 
     for (var i = 0; i < sabores.length; i++) {
+        precoTotal += precosTamanho[tamanho.value];
         precoTotal += precosSabor[sabores[i].value];
+
     }
 
     precoTotal *= quantidade;
