@@ -42,7 +42,7 @@ times.forEach(function(time){
 });
 
 const tres = document.getElementById("times_3_libertadores");      
-let tri = times.filter(p => p.libertadores > 2);
+let tri = times.filter(p => p.libertadores >= 2);
 tri.forEach(function(time){
     lista_tri = document.getElementById("times_3_libertadores");
     const li = document.createElement("li")
